@@ -6,4 +6,4 @@ Neste caso foi utilizado apenas **hover** com **translateY** para alternar as ca
 
 ### Prévia
 
-<img src="./preview.jpg" />
+<img src="./preview.gif" />

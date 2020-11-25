@@ -6,4 +6,4 @@ Utilizei um exemplo de animação com o Naruto e conceitos de **hover** e **befo
 
 ### Prévia
 
-<img src="./preview.jpg" />
+<img src="./preview.gif" />

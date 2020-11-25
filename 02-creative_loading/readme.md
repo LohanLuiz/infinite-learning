@@ -36,4 +36,4 @@ h2:before {
 
 ### Prévia
 
-<img src="./preview.jpg" />
+<img src="./preview.gif" />
