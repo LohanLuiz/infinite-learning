@@ -11,13 +11,30 @@
 <body>
 
   <section>
-    <img src="./assets/bg.jpg" alt="bg">
-    <img src="./assets/moon.png" alt="moon.png">
-    <img src="./assets/mountain.png" alt="mountain.png">
-    <img src="./assets/road.png" alt="road.png">
+    <img src="./assets/bg.jpg" id="bg">
+    <img src="./assets/moon.png" id="moon">
+    <img src="./assets/mountain.png" id="mountain">
+    <img src="./assets/road.png" id="road">
     <h2 id="text">Moon Light</h2>
   </section>
 
-</body>
+    <script type="text/javascript">
+      let bg = document.getElementById("bg");
+      let moon = document.getElementById("moon");
+      let mountain = document.getElementById("mountain");
+      let road = document.getElementById("road");
+      let text = document.getElementById("text");
 
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+
+        bg.style.top = value * 0.5 + 'px';
+        moon.style.left = -value * 0.5 + 'px';
+        mountain.style.top = -value * 0.15 + 'px';
+        road.style.top = value * 0.15 + 'px';
+        text.style.top = value * 1 + 'px';
+      })
+    </script>
+
+</body>
 </html>
