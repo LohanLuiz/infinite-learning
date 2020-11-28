@@ -25,6 +25,11 @@ header {
   z-index: 100000;
 }
 
+header.sticky {
+  padding: 5px 100px;
+  background: #FFF;
+}
+
 header .logo {
   position: relative;
   font-weight: 700;
@@ -64,4 +69,8 @@ header ul li a {
   height: 100vh;
   background: url(bg.jpg);
   background-size: cover; 
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
 }
