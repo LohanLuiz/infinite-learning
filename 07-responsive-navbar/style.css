@@ -1,0 +1,39 @@
+body {
+  font-family: serif;
+  background-color: #E8EEF3;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  background-color: red;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  background: violet;
+}
+
+.header .nav {
+  background: green;
+}
