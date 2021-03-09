@@ -1,5 +1,9 @@
+:root {
+  --color-black: #2F3240;
+}
+
 body {
-  font-family: serif;
+  font-family: sans-serif;
   background-color: #E8EEF3;
 }
 
@@ -17,7 +21,6 @@ a {
   text-decoration: none;
 }
 .container {
-  background-color: red;
   max-width: 1170px;
   margin: auto;
 }
@@ -30,10 +33,38 @@ a {
   justify-content: space-between;
 }
 
-.header .logo {
-  background: violet;
+.header {
+  background-color: var(--color-black);
+  padding: 12px 0;
+  line-height: 1.5;
 }
 
+.header .logo,
 .header .nav {
-  background: green;
+  padding: 0 15px;
 }
+
+.header .logo a {
+  font-size: 30px;
+  color: #FFF;
+  text-transform: capitalize;
+}
+
+.header .nav ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.header .nav ul li a {
+  display: block;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #FFF;
+  padding: 10px 0;
+  transition: all 0.5s ease;
+}
+
+/* .header .nav ul li a.active,
+.header .nav ul li a:hover {
+  color: #F3A93D;
+} */
