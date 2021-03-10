@@ -84,6 +84,8 @@ body {
 
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .login-page .box .form h3 {
@@ -91,13 +93,14 @@ body {
   color: #191622;
   margin: 0 0 30px;
 }
-.login-page .box .form .login-form {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
 
 .login-page .box .form .form-group {
   margin-bottom: 20px;
+}
+
+.login-page .box .form .login-form,
+.login-page .box .form .register-form {
+  
 }
 
 .login-page .box .form .form-control {
@@ -146,4 +149,11 @@ body {
   text-decoration: none;
   display: inline-block;
   color: #7159c1;
+}
+
+.login-page .box .form .form-hidden {
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
 }
