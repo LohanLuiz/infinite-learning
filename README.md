@@ -1,5 +1,5 @@
 # infinite-learning
-Nesse repositório irei fazer mini projetos com coisas divertidas que quero aprender, na maioria serão simples. 🚀
+At this repository I Am going to do small projects with fun things that I want to learn, in majority will be simple. 🚀
 
 ## Projetos já feitos até o momento:
 
