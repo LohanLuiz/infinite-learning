@@ -11,7 +11,7 @@ registerBtn.forEach((btn) => {
     box.classList.add("slide-active");
     registerForm.classList.remove("form-hidden");
     loginForm.classList.add("form-hidden");
-
+    lostPasswordForm.classList.add("form-hidden");
   })
 })
 
@@ -20,5 +20,14 @@ loginBtn.forEach((btn) => {
     box.classList.remove("slide-active");
     registerForm.classList.add("form-hidden");
     loginForm.classList.remove("form-hidden");
+    lostPasswordForm.classList.add("form-hidden");
+  })
+})
+
+lostPassBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    registerForm.classList.add("form-hidden");
+    loginForm.classList.add("form-hidden");
+    lostPasswordForm.classList.remove("form-hidden");
   })
 })
