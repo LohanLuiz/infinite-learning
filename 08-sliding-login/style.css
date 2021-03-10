@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  line-height: 1.5rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.login-page {
+  min-height: 100vh;
+  padding: 1.5rem;
+  background-color: #EEEEEE;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-page .box {
+  background-image: url('./bg.jpg');
+  background-size: cover;
+  flex: 0 0 700px;
+  max-width: 700px;
+  min-height: 480px;
+  box-shadow: 0 0 10px #DDDDDD;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.login-page .box .left,
+.login-page .box .right {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.login-page .box .left {
+  background: red;
+}
+
+.login-page .box .right {
+  background: green;
+}
