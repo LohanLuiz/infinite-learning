@@ -12,7 +12,7 @@ body {
 .login-page {
   min-height: 100vh;
   padding: 1.5rem;
-  background-color: #EEEEEE;
+  background-color: #DDDDDD;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -22,15 +22,21 @@ body {
 .login-page .box {
   background-image: url('./bg.jpg');
   background-size: cover;
+  background-position: -160px center;
+  background-repeat: repeat-x;
   flex: 0 0 700px;
   max-width: 700px;
   min-height: 480px;
   box-shadow: 0 0 10px #DDDDDD;
-
   display: flex;
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-page .box.slide-active {
+  background-position: 160px center;
 }
 
 .login-page .box::before {
@@ -73,6 +79,11 @@ body {
   border-radius: 25px;
 }
 
+.login-page .box .left .register-btn:focus,
+.login-page .box .right .login-btn:focus {
+  outline: none;
+}
+
 .login-page .box .form {
   position: absolute;
   background-color: #FFF;
@@ -81,11 +92,15 @@ body {
   right: 0;
   top: 0;
   padding: 30px;
-
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.login-page .box.slide-active .form {
+  right: 50%;
 }
 
 .login-page .box .form h3 {
@@ -99,8 +114,9 @@ body {
 }
 
 .login-page .box .form .login-form,
-.login-page .box .form .register-form {
-  
+.login-page .box .form .register-form,
+.login-page .box .form .lost-password-form {
+  transition: all 0.5 ease-in-out;
 }
 
 .login-page .box .form .form-control {
