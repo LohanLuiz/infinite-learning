@@ -14,11 +14,22 @@
 
   <div class="wrapper">
     <form action="#">
-      <input type="text" placeholder="username" required>
+      <input type="text" placeholder="username" maxlength="16" required>
       <i class="uis uis-at"></i>
       <span class="counter">16</span>
     </form>
   </div>
+
+  <script>
+    const input = document.querySelector("form input"),
+    counter = document.querySelector("form .counter"),
+    maxLength = input.getAttribute("maxlength");
+
+    input.onkeyup = () => {
+      counter.innerText = maxLength - input.value.length;
+    }
+
+  </script>
 
 </body>
 </html>
