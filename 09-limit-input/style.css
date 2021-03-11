@@ -12,11 +12,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to top, #56E2D7 0%, #58CFF1 100%);
+  background: #342f44;
 }
 
 .wrapper {
-  background: #FFFFFF;
+  background: #39304e;
   padding: 20px;
   width: 450px;
   border-radius: 5px;
@@ -41,13 +41,13 @@ form i {
 }
 
 form input:valid ~ i {
-  color: #58cff1;
+  color: #67e480;
 }
 
 form input {
   height: 100%;
   width: 100%;
-  border: 2px solid #DDD;
+  border: 2px solid #383D52;
   border-radius: 5px;
   padding: 0 50px 0 45px;
   font-size: 20px;
@@ -57,7 +57,7 @@ form input {
 
 form input:focus,
 form input:valid {
-  border-color: #58cff1;
+  border-color: #67e480;
 }
 
 form input::placeholder {
@@ -76,6 +76,5 @@ form .counter {
 }
 
 form input:valid ~ .counter {
-  color: #58cff1;
-  border-color: #58cff1;
+  color: #67e480;
 }
