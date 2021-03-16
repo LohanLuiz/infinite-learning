@@ -1,5 +1,5 @@
 # infinite-learning
-At this repository I Am going to do small projects with fun things that I want to learn, in majority will be simple. 🚀
+At this repository I Am going to do small projects with fun things that I want to learn, in majority will be simple. 🚀🚀
 
 ## Project already maded at this moment:
 
